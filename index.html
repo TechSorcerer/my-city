@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="modal.css">
+
+  <link href="
+        https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+        " rel="stylesheet">
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div class="city-page">
+
+    <div class="wrapper">
+      <img src="img/logo.png" alt="GOIT logo" class="goit-logo">
+
+
+      <div class="city-text-container">
+        <h1 class="city-title">Хмельницький</h1>
+        <p class="city-description">
+          Засноване 1431 року, налічує близько 274 тисяч українців. Красиве, світле й живописне місто, назване на честь
+          Б.
+          Хмельницького, має найбільшу кількість в Україні та світі пам’ятників гетьману – чотири. До 1793 року
+          Хмельницкий
+          мав назву Плоскирів, з 1795 по 16 січня 1954 — Проскурів. Має найстаріший централізований питний водогін,
+          збудований
+          1910 року. Хмельницький відомий на всю Україну як місто торгівлі — нині тут діє цілий ринковий комплекс, який
+          займає
+          площу понад 18 га.</p>
+
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="city-gallery">
+    <h2 class="city-gallery-title"> Хмельницький = гетьманське місто </h2>
+
+    <div class="wrapper">
+      <div class="gallery">
+        <buttom class="gallery-buttom" data-micromodal-trigger="modal" data-index="0">
+          <img class="gallery-image" src="img/1.jpg" alt="KHM river">
+        </buttom>
+
+        <buttom class="gallery-buttom" data-micromodal-trigger="modal" data-index="1">
+          <img class="gallery-image" src="img/2.jpg" alt="KHM river">
+        </buttom>
+
+        <buttom class="gallery-buttom" data-micromodal-trigger="modal" data-index="2">
+          <img class="gallery-image" src="img/3.jpg" alt="KHM river">
+        </buttom>
+
+        <buttom class="gallery-buttom" data-micromodal-trigger="modal" data-index="3">
+          <img class="gallery-image" src="img/4.jpg" alt="KHM river">
+        </buttom>
+
+        <buttom class="gallery-buttom" data-micromodal-trigger="modal" data-index="4">
+          <img class="gallery-image" src="img/5.jpg" alt="KHM river">
+        </buttom>
+
+        <buttom class="gallery-buttom" data-micromodal-trigger="modal" data-index="5">
+          <img class="gallery-image" src="img/6.jpg" alt="KHM river">
+        </buttom>
+
+        <buttom class="gallery-buttom" data-micromodal-trigger="modal" data-index="6">
+          <img class="gallery-image" src="img/7.jpg" alt="KHM river">
+        </buttom>
+
+        <buttom class="gallery-buttom" data-micromodal-trigger="modal" data-index="7">
+          <img class="gallery-image" src="img/8.jpg" alt="KHM river">
+        </buttom>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="modal micromodal-slide" id="modal" aria-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+      <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <header class="modal__header">
+          <h2 class="modal__title" id="modal-title">
+            Cвітлини міста Хмельницького
+          </h2>
+          <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+        </header>
+        <main class="modal__content" id="modal-content">
+          <div class="splide" role="group" aria-label="city-gallery">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <img src="img/1.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="img/2.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="img/3.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="img/4.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="img/5.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="img/6.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="img/7.jpg" alt="">
+                </li>
+                <li class="splide__slide">
+                  <img src="img/8.jpg" alt="">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
+
+  <script src="
+        https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+        "></script>
+
+  <script src="gallery.js"></script>
+
+</body>
+
+</html>
